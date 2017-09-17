@@ -20,6 +20,7 @@ layout: home
                 <h2>
                     <a class="postTitle" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
                 </h2>
+                <p>{{ post.date | date: '%B %d, %Y' }}</p>
                 <p>{{ post.meta }}</p>
             </li>
             <hr>
