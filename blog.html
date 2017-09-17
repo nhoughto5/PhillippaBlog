@@ -1,3 +1,24 @@
 ---
-layout: blog
+layout: home
 ---
+<div class="blogWrapper">
+    <h1 class="title">Blog</h1>
+    {% for category in site.categories %}
+    <li class="blogNavCategory">
+        <a href="/Categories/{{ category | first | strip_html }}">{{ category | first | strip_html }} </a>
+    </li>
+    {% endfor %}
+
+
+    {% for post in site.posts %}
+
+    <li>
+        <h2>
+            <a class="postTitle" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </h2>
+        <p>{{ post.meta }}</p>
+    </li>
+
+    <hr>
+    {% endfor %}
+</div>
