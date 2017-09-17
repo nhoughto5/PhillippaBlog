@@ -1,8 +1,13 @@
 ---
 layout: home
 ---
-<div class="blogWrapper">
-    <h1 class="title">Blog</h1>
+<div class="jumbo">
+    <div class="centered">
+        <h1 class="blog-header">Blog Archive</h1>
+    </div>
+</div>
+
+<div class="container text-center">
     {% for category in site.categories %}
     <li class="blogNavCategory">
         <a id="{{ category | first | strip_html }}" onclick="filter(this.id)">{{ category | first | strip_html }} </a>
@@ -11,21 +16,19 @@ layout: home
     <li>
         <a id="All" onclick="filter(this.id)">All</a>
     </li>
-
-
-    <div id="postList">
-        {% for post in site.posts %}
-        <div data-category="{{post.category}}">
-            <li>
-                <h2>
-                    <a class="postTitle" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                </h2>
-                <p>{{ post.date | date: '%B %d, %Y' }}</p>
-                <p>{{ post.meta }}</p>
-            </li>
-            <hr>
-        </div>
-        {% endfor %}
-    </div>
 </div>
+
+<div id="postList" class="container text-center">
+    {% for post in site.posts %}
+    <div class="blog-feature text-center" data-category="{{post.category}}">
+        <div class="centered">
+            <h4>{{post.title}}</h4>
+            <p class="blog-date">{{ post.date | date: '%B %d, %Y' }}</p>
+            <p>{{ post.meta }}</p>
+        </div>
+        <a class="bloglink" href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+    </div>
+    {% endfor %}
+</div>
+
 <script src="{{ site.baseurl }}/assets/js/PostFilter.js"></script>
