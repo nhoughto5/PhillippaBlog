@@ -35,3 +35,6 @@ plugins:
 # to override the default setting.
 # exclude
 exclude: ["CNAME", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+
+_editor:
+  default_path: /
