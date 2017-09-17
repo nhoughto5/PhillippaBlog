@@ -1,0 +1,57 @@
+---
+---
+
+$cream: #E9DCCD;
+$petal: #E3BAB3;
+$burgundy: #613A43;
+$fresh: #849974;
+$charcoal: #36384c;
+
+$font-header: 'Lora', serif;
+$font-body: 'Raleway', sans-serif; 
+
+* {
+    box-sizing: border-box;
+    font-family: $font-body;
+    font-size: 14px;
+    color: $charcoal;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-header;
+}
+
+h1 {
+    font-size: 300%;
+}
+
+h2 {
+    font-size: 250%;
+}
+
+h3 {
+    font-size: 200%;
+}
+
+h4 {
+    font-size: 175%;
+}
+
+h5 {
+    font-size: 150%;
+}
+
+h6 {
+    font-size: 125%;
+}
+
+p {
+    line-height: 1.75;
+}
+
+.jumbo {
+    background-color: $petal;
+    height: 500px;
+}
