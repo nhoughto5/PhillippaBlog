@@ -1,10 +1,10 @@
 ---
 ---
 
-$cream: #E9DCCD;
-$petal: #E3BAB3;
-$burgundy: #613A43;
-$fresh: #849974;
+$cream: #FAE3D9;
+$petal: #FFB6B9;
+$burgundy: #61C0BF;
+$fresh: #4BBCF4;
 $charcoal: #36384c;
 
 $font-header: 'Lora', serif;
@@ -21,14 +21,28 @@ $font-body: 'Raleway', sans-serif;
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-header;
+    color: $burgundy;
 }
 
 h1 {
-    font-size: 300%;
+    font-size: 400%;
+    color: #fff;
+    padding: 20px;
+    border: 2px solid $burgundy;
 }
 
 h2 {
     font-size: 250%;
+    padding: 10px 0 30px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: $burgundy;
+    content: "";
+    width: 100px;
+    margin: 10px auto 0;
 }
 
 h3 {
@@ -37,6 +51,7 @@ h3 {
 
 h4 {
     font-size: 175%;
+    padding-bottom: 20px;
 }
 
 h5 {
@@ -49,9 +64,108 @@ h6 {
 
 p {
     line-height: 1.75;
+    margin: 15px 0;
+}
+
+a {
+    border-bottom: 2px solid $petal;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: $petal;
+}
+
+.row:before, 
+.row:after {
+    content:"";
+    display: table ;
+    clear:both;
+}
+
+.bg-petal {
+    background-color: $petal;
+}
+.bg-cream {
+    background-color: $cream;
+}
+.bg-fresh {
+    background-color: $fresh;
+}
+.bg-burgundy {
+    background-color: $burgundy;
+}
+.bg-charcoal {
+    background-color: $charcoal;
+}
+
+.color-swatch {
+    height: 100px;
+    width: 20%;
+    display: inline-block;
+}
+
+.colors {
+    font-size: 0;
+    margin: 10px 0;
+}
+
+.bio-image {
+    width: 50%;
+    display: inline-block;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .jumbo {
     background-color: $petal;
-    height: 500px;
+    height: 400px;
+    position: relative;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bio-text {
+    width: 50%;
+    height: 100%;
+    vertical-align: top;
+    padding: 0 30px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 850px) {
+    .bio-text, .bio-image {
+        width: 100%;
+    }
+}
+
+.blog-container {
+    margin: 60px 0;
+}
+
+.blog-feature {
+    display: inline-block;
+    width: 45%;
+    margin: 10px 2.5%;
+    height: 200px;
+    position: relative;
+    border: 2px solid $fresh;
 }
