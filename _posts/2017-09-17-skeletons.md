@@ -1,6 +1,6 @@
 ---
 layout: post
-category: Medicine Category
+category: Skeleton
 meta: This is about Medicine
 title: Skeletons
 ---
