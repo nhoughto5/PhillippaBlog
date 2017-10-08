@@ -2,13 +2,13 @@
 layout: home
 ---
 <div class="nav">
-    <a class="navlink" href="{{siteurl}}/">Home</a>
-    <a class="navlink" href="{{siteurl}}/about">Bio</a>
+    <a class="navlink" href="{{site.siteurl}}/">Home</a>
+    <a class="navlink" href="{{site.siteurl}}/about">Bio</a>
     <a class="navlink" href="#">Gallery</a>
 </div>
 <div class="brand-header">
     <div class="brand center-vh">
-        <img src="{{siteurl}}/assets/images/stethoscope.svg" alt="Brand Icon">
+        <img src="{{site.siteurl}}/assets/images/stethoscope.svg" alt="Brand Icon">
         <h1>Blog Archive</h1>
         
         <ul>
@@ -27,10 +27,10 @@ layout: home
 
 <div id="postList" class="blog-container">
     {% for post in site.posts %}
-    <a href="{{ site.baseurl }}{{ post.url }}" data-category="{{post.category}}">
+    <a href="{{ site.siteurl }}{{ post.url }}" data-category="{{post.category}}">
         <div class="blog-listing">
             <div class="blog-listing-image">
-                <img src="{{siteurl}}{{post.image}}" alt="">
+                <img src="{{site.siteurl}}{{post.image}}" alt="">
             </div>
             <div class="blog-listing-text">
                 <p class="category">Cat1</p>
@@ -43,4 +43,4 @@ layout: home
     {% endfor %}
 </div>
 
-<script src="{{ site.baseurl }}/assets/js/PostFilter.js"></script>
+<script src="{{ site.siteurl }}/assets/js/PostFilter.js"></script>
