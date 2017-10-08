@@ -3,6 +3,7 @@ layout: post
 category: Medicine Category
 meta: This is about Medicine
 title: Doing Drugs
+image: /assets/images/stock4.jpg
 ---
 
 

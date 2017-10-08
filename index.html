@@ -2,72 +2,125 @@
 layout: home
 ---
 
-<div class="jumbo">
-    <div class="centered">
-        <h1 class="editable">HELLLOOO!!</h1>
+<div class="brand-header">
+    <div class="brand center-vh">
+        <img src="{{siteurl}}/assets/images/stethoscope.svg" alt="Brand Icon">
+        <h1>Phillippa's Blog</h1>
+        <p class="italic">Short website description</p>
     </div>
 </div>
 
-<div class="container">
-    <div class="bio-image">
-        <img src="{{site.url}}/assets/images/portrait.jpeg" alt="biophoto" />
-    </div><!--
-    --><div class="bio-text text-center">
-        <h2 class="editable">Hi!</h2>
-        <p class="editable">Phillippa's bio and/or description of blog<br />This is the blogy blog.<br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed eros non erat dictum euismod et nec odio. Aenean semper dolor in facilisis tincidunt. Aliquam suscipit neque mauris, eget interdum massa blandit eu. Nam at ultricies velit. Cras sed velit et orci lacinia dictum quis ac lacus. Fusce egestas urna ac velit consequat bibendum. Ut eleifend sapien at neque pharetra, ornare tristique arcu tristique. Nunc at est non dui semper commodo eget laoreet turpis. Mauris ultrices non lorem at efficitur. Curabitur sit amet molestie massa. Vivamus diam purus, molestie sed odio sed, dapibus volutpat ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque varius, nulla ut eleifend lobortis, est arcu eleifend dolor, quis tempus est eros quis sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In sed lectus tempor, rhoncus tortor eu, tincidunt lectus.</p>
-        <a href="#"> Read full bio >> </a>
+<div class="nav">
+    <a class="navlink" href="{{siteurl}}/blog">Blog</a>
+    <a class="navlink" href="{{siteurl}}/about">Bio</a>
+    <a class="navlink" href="#">Gallery</a>
+</div>
+
+<div class="carousel slider">
+    <div class="carousel-item">
+        <a href="#"><div class="overlay center-vh">
+            <h2>Some trendy blog title</h2>
+            <p class="category">Cat1</p>
+            <p class="category">Cat2</p>
+        </div></a>
+        <img src="{{siteurl}}/assets/images/stock1.jpeg" alt="" srcset="">
+    </div>
+    <div class="carousel-item">
+        <a href="#"><div class="overlay center-vh">
+            <h2>Some trendy blog title</h2>
+            <p class="category">Cat1</p>
+            <p class="category">Cat2</p>
+        </div></a>
+        <img src="{{siteurl}}/assets/images/stock2.jpeg" alt="" srcset="">
+    </div>
+    <div class="carousel-item">
+        <a href="#"><div class="overlay center-vh">
+            <h2>Some trendy blog title</h2>
+            <p class="category">Cat1</p>
+            <p class="category">Cat2</p>
+        </div></a>
+        <img src="{{siteurl}}/assets/images/stock3.jpeg" alt="" srcset="">
+    </div>
+    <div class="carousel-item">
+        <a href="#"><div class="overlay center-vh">
+            <h2>Some trendy blog title</h2>
+            <p class="category">Cat1</p>
+            <p class="category">Cat2</p>
+        </div></a>
+        <img src="{{siteurl}}/assets/images/stock5.jpeg" alt="" srcset="">
     </div>
 </div>
 
-<div class="container text-center">
-    <h2 class="editable">Blog</h2>
-    <p class="editable">Blog Description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed eros non erat disa blandit eu. Nam at ultricies velit. Cras sed velit et orci lacinia dictum quis ac lacus. Fusce egestas urna ac velit consequat bibendum. Ut eleifend.</p>
-    <a href="/blog">See All Posts >></a>
-    <div class="blog-container">
-        <div class="blog-feature text-center">
-            <div class="centered">
-                <h4>This Is The Title Of A Blog Post</h4>
+<div class="about">
+    <div class="about-photo">
+        <img src="{{siteurl}}/assets/images/profile2.jpeg" alt="Bio Photo">
+    </div>
+    <div class="about-desc">
+        <h3 class="about-header">About Phillippa</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis arcu quis augue convallis ultricies ut ut purus. Integer elementum eleifend convallis.</p>
+        <p>Aenean dui erat, posuere et sagittis in, hendrerit at augue. Suspendisse ultrices blandit semper. In ac purus quam. In id purus tortor. Sed ut felis nec augue ornare pharetra at at leo.</p>
+        <p>Nulla urna enim, luctus sit amet aliquam non, sagittis sed sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur condimentum augue quis est feugiat congue. Nulla nec facilisis massa. Donec odio urna, fringilla eget ex at, efficitur sollicitudin lectus.</p>
+        <a href="#" class="link-btn italic">Full Bio</a>
+    </div>
+</div>
+
+<div class="blog-feature">
+    <h3 class="blog-feature-header">Latest From the Blog</h3>
+    <p class="blog-feature-header italic">A description of the type of stuff you write about</p>
+    <div class="blog-thumb-container">
+        <div class="blog-thumbnail">
+            <a href="#">
+            <div class="blog-thumb-image"><img src="{{siteurl}}/assets/images/stock4.jpg" alt=""></div>
+            <div class="blog-thumb-text">
+                <p class="category">Cat1</p>
+                <p class="category">Cat2</p>
+                <h4>Blog Post Title</h4>
+                <p class="italic">June 10, 2017</p>
             </div>
-            <a class="bloglink" href="#">Read more</a>
-        </div><!--
-        --><div class="blog-feature text-center">
-            <div class="centered">
-                <h4>This Is Another Blog Post</h4>
+            </a>
+        </div>
+        <div class="blog-thumbnail">
+            <a href="#">
+            <div class="blog-thumb-image"><img src="{{siteurl}}/assets/images/stock6.jpg" alt=""></div>
+            <div class="blog-thumb-text">
+                <p class="category">Cat1</p>
+                <p class="category">Cat2</p>
+                <h4>Blog Post Title</h4>
+                <p class="italic">June 10, 2017</p>
             </div>
-            <a class="bloglink" href="#">Read more</a>
-        </div><!--
-        --><div class="blog-feature text-center">
-            <div class="centered">
-                <h4>This Is A Blog Post With A Really Long Title Title Title Title</h4>
+            </a>
+        </div>
+        <div class="blog-thumbnail">
+            <a href="#">
+            <div class="blog-thumb-image"><img src="{{siteurl}}/assets/images/stock7.jpeg" alt=""></div>
+            <div class="blog-thumb-text">
+                <p class="category">Cat1</p>
+                <p class="category">Cat2</p>
+                <h4>Blog Post Title</h4>
+                <p class="italic">June 10, 2017</p>
             </div>
-            <a class="bloglink" href="#">Read more</a>
-        </div><!--
-        --><div class="blog-feature text-center">
-            <div class="centered">
-                <h4>Short Post Title</h4>
+            </a>
+        </div>
+        <div class="blog-thumbnail">
+            <a href="#">
+            <div class="blog-thumb-image"><img src="{{siteurl}}/assets/images/stock8.jpeg" alt=""></div>
+            <div class="blog-thumb-text">
+                <p class="category">Cat1</p>
+                <p class="category">Cat2</p>
+                <h4>Blog Post Title</h4>
+                <p class="italic">June 10, 2017</p>
             </div>
-            <a class="bloglink" href="#">Read more</a>
+            </a>
         </div>
     </div>
+    <a href="{{siteurl}}/blog" class="link-btn italic">See All Posts</a>
 </div>
 
-<div class="container">
-    <div class="gallery"><img src="{{site.url}}/assets/images/p1.png" /></div><!--
-    --><div class="gallery"><img src="{{site.url}}/assets/images/p2.png" /></div><!--
-    --><div class="gallery"><img src="{{site.url}}/assets/images/p3.png" /></div><!--
-    --><div class="gallery"><img src="{{site.url}}/assets/images/p4.png" /></div><!--
-    --><div class="gallery last4"><img src="{{site.url}}/assets/images/p5.png" /></div><!--
-    --><div class="gallery last4"><img src="{{site.url}}/assets/images/p6.png" /></div><!--
-    --><div class="gallery last2"><img src="{{site.url}}/assets/images/p7.png" /></div><!--
-    --><div class="gallery last2"><img src="{{site.url}}/assets/images/p8.png" /></div>
-</div>
-
-<div class="row container">
-    <div class="colors">
-        <div class="color-swatch bg-cream"></div>
-        <div class="color-swatch bg-petal"></div>
-        <div class="color-swatch bg-burgundy"></div>
-        <div class="color-swatch bg-fresh"></div>
-        <div class="color-swatch bg-charcoal"></div>
+<div class="contact">
+    <div class="contact-info">
+        <h1>Get in touch!</h1>
+        <p class="italic">I'd love to hear from you</p>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-envelope-o"></i></a>
     </div>
 </div>

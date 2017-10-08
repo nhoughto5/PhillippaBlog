@@ -1,34 +1,45 @@
 ---
 layout: home
 ---
-<div class="jumbo text-center">
-    <div class="centered">
-        <h1 class="blog-header editable">Blog Archive</h1>
+<div class="nav">
+    <a class="navlink" href="{{siteurl}}/">Home</a>
+    <a class="navlink" href="{{siteurl}}/about">Bio</a>
+    <a class="navlink" href="#">Gallery</a>
+</div>
+<div class="brand-header">
+    <div class="brand center-vh">
+        <img src="{{siteurl}}/assets/images/stethoscope.svg" alt="Brand Icon">
+        <h1>Blog Archive</h1>
+        
+        <ul>
+            {% for category in site.categories %}
+            <li class="blogNavCategory blog-cat">
+                <a class="category" id="{{ category | first | strip_html }}" onclick="filter(this.id)">{{ category | first | strip_html }} </a>
+            </li>
+            {% endfor %}
+            <li class="blog-cat">
+                <a class="category" id="All" onclick="filter(this.id)">All</a>
+            </li>
+        </ul>
+
     </div>
-    <a href="/" class="home-button">Home Page</a>
 </div>
 
-<div class="container text-center">
-    {% for category in site.categories %}
-    <li class="blogNavCategory">
-        <a id="{{ category | first | strip_html }}" onclick="filter(this.id)">{{ category | first | strip_html }} </a>
-    </li>
-    {% endfor %}
-    <li>
-        <a id="All" onclick="filter(this.id)">All</a>
-    </li>
-</div>
-
-<div id="postList" class="container text-center">
+<div id="postList" class="blog-container">
     {% for post in site.posts %}
-    <div class="blog-feature text-center" data-category="{{post.category}}">
-        <div class="centered">
-            <h4>{{post.title}}</h4>
-            <p class="blog-date">{{ post.date | date: '%B %d, %Y' }}</p>
-            <p>{{ post.meta }}</p>
+    <a href="{{ site.baseurl }}{{ post.url }}" data-category="{{post.category}}">
+        <div class="blog-listing">
+            <div class="blog-listing-image">
+                <img src="{{siteurl}}{{post.image}}" alt="">
+            </div>
+            <div class="blog-listing-text">
+                <p class="category">Cat1</p>
+                <h4 class="blog-listing-title">{{post.title}}</h4>
+                <p class="italic">{{ post.date | date: '%B %d, %Y' }}</p>
+                <p>{{ post.meta }}</p>
+            </div>
         </div>
-        <a class="bloglink" href="{{ site.baseurl }}{{ post.url }}">Read more</a>
-    </div>
+    </a>
     {% endfor %}
 </div>
 
