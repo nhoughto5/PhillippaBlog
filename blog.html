@@ -33,7 +33,7 @@ layout: home
                 <img src="{{site.siteurl}}{{post.image}}" alt="">
             </div>
             <div class="blog-listing-text">
-                <p class="category">Cat1</p>
+                <p class="category">{{post.category}}</p>
                 <h4 class="blog-listing-title">{{post.title}}</h4>
                 <p class="italic">{{ post.date | date: '%B %d, %Y' }}</p>
                 <p>{{ post.meta }}</p>
