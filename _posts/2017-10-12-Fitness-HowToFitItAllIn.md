@@ -3,7 +3,7 @@ title: How To Fit It All In
 category: Fitness
 meta: 
 layout: post
-image: /assets/images/stock6.jpg
+image: /assets/images/p6.png
 ---
 
 I think if I had a full 24 hours/day to fit in all of the positive wellness, health and fitness pursuits I wanted – I still wouldn’t have time for everything.  There’s just so much! HIIT for maximum cardiovascular health and weight maintenance, strength training for bone density and muscle building, yoga for mobility and relaxation, mindfulness for promoting peace, journaling for self-reflection, food prepping for optimal nutrition – where does one find time to work, raise a family and socialize?
