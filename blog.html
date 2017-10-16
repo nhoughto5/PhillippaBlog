@@ -27,8 +27,8 @@ layout: home
 
 <div id="postList">
     {% for post in site.posts %}
-    <div class="blog-container">
-        <a href="{{ site.siteurl }}{{ post.url }}" data-category="{{post.category}}">
+    <div class="blog-container" data-category="{{post.category}}">
+        <a href="{{ site.siteurl }}{{ post.url }}" >
             <div class="blog-listing">
                 <div class="blog-listing-image">
                     <img src="{{site.siteurl}}{{post.image}}" alt="">

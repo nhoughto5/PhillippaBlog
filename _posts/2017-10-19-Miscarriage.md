@@ -4,7 +4,6 @@ category: Medicine
 meta: 
 layout: post
 image: /assets/images/phills_and_chris.jpg
-published: false
 ---
 
 At this point in my career I have completed a four-year bachelor of science in kinesiology, four years of medical school and one year of post-grad training in family medicine. In one year I will be a licensed family doctor, able to practice family medicine on my own. Based on my education, I thought I knew about miscarriage. I thought my years of my training and countless patient interactions had taught me what I needed to know.
