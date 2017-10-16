@@ -21,32 +21,32 @@ imageTitle: The Wellness Epidemic
     <div class="carousel-item">
         <a href="#"><div class="overlay center-vh">
             <h2>{{page.imageTitle}}</h2>
-            <p class="category">Cat1</p>
-            <p class="category">Cat2</p>
+            <p class="category">Fitness</p>
+            <p class="category">Health</p>
         </div></a>
         <img src="{{site.siteurl}}/assets/images/stock1.jpeg" alt="" srcset="">
     </div>
     <div class="carousel-item">
         <a href="#"><div class="overlay center-vh">
             <h2>{{page.imageTitle}}</h2>
-            <p class="category">Cat1</p>
-            <p class="category">Cat2</p>
+            <p class="category">Fitness</p>
+            <p class="category">Health</p>
         </div></a>
         <img src="{{site.siteurl}}/assets/images/stock2.jpeg" alt="" srcset="">
     </div>
     <div class="carousel-item">
         <a href="#"><div class="overlay center-vh">
             <h2>{{page.imageTitle}}</h2>
-            <p class="category">Cat1</p>
-            <p class="category">Cat2</p>
+            <p class="category">Fitness</p>
+            <p class="category">Health</p>
         </div></a>
         <img src="{{site.siteurl}}/assets/images/stock3.jpeg" alt="" srcset="">
     </div>
     <div class="carousel-item">
         <a href="#"><div class="overlay center-vh">
             <h2>{{page.imageTitle}}</h2>
-            <p class="category">Cat1</p>
-            <p class="category">Cat2</p>
+            <p class="category">Fitness</p>
+            <p class="category">Health</p>
         </div></a>
         <img src="{{site.siteurl}}/assets/images/stock5.jpeg" alt="" srcset="">
     </div>
@@ -54,7 +54,7 @@ imageTitle: The Wellness Epidemic
 
 <div class="about">
     <div class="about-photo">
-        <img src="{{site.siteurl}}/assets/images/profile2.jpeg" alt="Bio Photo">
+        <img src="{{site.siteurl}}/assets/images/Phills_Box.jpg" alt="Bio Photo">
     </div>
     <div class="about-desc">
         <h3 class="about-header">About Phillippa</h3>
@@ -69,58 +69,26 @@ imageTitle: The Wellness Epidemic
              of disease in a given population over a short period of time. Wellness is the state of being in
              good health. Instead of spreading disease, my goal with this blog is to inspire and spread
              wellness.</p>
-        <a href="#" class="link-btn italic">Full Bio</a>
+        <a href="{{site.siteurl}}/about" class="link-btn italic">Full Bio</a>
     </div>
 </div>
 
 <div class="blog-feature">
     <h3 class="blog-feature-header">Latest From the Blog</h3>
-    <p class="blog-feature-header italic">A description of the type of stuff you write about</p>
+    <p class="blog-feature-header italic">A collection of my thoughts on physical, mental and spiritual health</p>
     <div class="blog-thumb-container">
+        {% for post in site.posts limit:4 %}
         <div class="blog-thumbnail">
-            <a href="#">
-            <div class="blog-thumb-image"><img src="{{site.siteurl}}/assets/images/stock4.jpg" alt=""></div>
+            <a href="{{ site.siteurl }}{{ post.url }}">
+            <div class="blog-thumb-image"><img src="{{site.siteurl}}{{post.image}}" alt=""></div>
             <div class="blog-thumb-text">
-                <p class="category">Cat1</p>
-                <p class="category">Cat2</p>
-                <h4>Blog Post Title</h4>
-                <p class="italic">June 10, 2017</p>
+                <p class="category">{{post.category}}</p>
+                <h4>{{post.title}}</h4>
+                <p class="italic">{{ post.date | date: '%B %d, %Y' }}</p>
             </div>
             </a>
         </div>
-        <div class="blog-thumbnail">
-            <a href="#">
-            <div class="blog-thumb-image"><img src="{{site.siteurl}}/assets/images/stock6.jpg" alt=""></div>
-            <div class="blog-thumb-text">
-                <p class="category">Cat1</p>
-                <p class="category">Cat2</p>
-                <h4>Blog Post Title</h4>
-                <p class="italic">June 10, 2017</p>
-            </div>
-            </a>
-        </div>
-        <div class="blog-thumbnail">
-            <a href="#">
-            <div class="blog-thumb-image"><img src="{{site.siteurl}}/assets/images/stock7.jpeg" alt=""></div>
-            <div class="blog-thumb-text">
-                <p class="category">Cat1</p>
-                <p class="category">Cat2</p>
-                <h4>Blog Post Title</h4>
-                <p class="italic">June 10, 2017</p>
-            </div>
-            </a>
-        </div>
-        <div class="blog-thumbnail">
-            <a href="#">
-            <div class="blog-thumb-image"><img src="{{site.siteurl}}/assets/images/stock8.jpeg" alt=""></div>
-            <div class="blog-thumb-text">
-                <p class="category">Cat1</p>
-                <p class="category">Cat2</p>
-                <h4>Blog Post Title</h4>
-                <p class="italic">June 10, 2017</p>
-            </div>
-            </a>
-        </div>
+        {% endfor %}
     </div>
     <a href="{{site.siteurl}}/blog" class="link-btn italic">See All Posts</a>
 </div>

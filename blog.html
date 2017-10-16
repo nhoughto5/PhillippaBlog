@@ -25,22 +25,25 @@ layout: home
     </div>
 </div>
 
-<div id="postList" class="blog-container">
+<div id="postList">
     {% for post in site.posts %}
-    <a href="{{ site.siteurl }}{{ post.url }}" data-category="{{post.category}}">
-        <div class="blog-listing">
-            <div class="blog-listing-image">
-                <img src="{{site.siteurl}}{{post.image}}" alt="">
+    <div class="blog-container">
+        <a href="{{ site.siteurl }}{{ post.url }}" data-category="{{post.category}}">
+            <div class="blog-listing">
+                <div class="blog-listing-image">
+                    <img src="{{site.siteurl}}{{post.image}}" alt="">
+                </div>
+                <div class="blog-listing-text">
+                    <p class="category">{{post.category}}</p>
+                    <h4 class="blog-listing-title">{{post.title}}</h4>
+                    <p class="italic">{{ post.date | date: '%B %d, %Y' }}</p>
+                    <p>{{ post.meta }}</p>
+                </div>
             </div>
-            <div class="blog-listing-text">
-                <p class="category">{{post.category}}</p>
-                <h4 class="blog-listing-title">{{post.title}}</h4>
-                <p class="italic">{{ post.date | date: '%B %d, %Y' }}</p>
-                <p>{{ post.meta }}</p>
-            </div>
-        </div>
-    </a>
+        </a>
+    </div>
     {% endfor %}
 </div>
+
 
 <script src="{{ site.siteurl }}/assets/js/PostFilter.js"></script>

@@ -228,7 +228,7 @@ CAROUSEL
 */
 
 .carousel {
-    height: 60vh;
+    height: 70vh;
     overflow: hidden;
     .carousel-item {
         overflow:hidden;
@@ -358,11 +358,22 @@ ABOUT
     }
 
     .about-desc {
-        padding: 0 30px;
+        padding: 0 20px;
         text-align: center;
         position: relative;
 
         
+    }
+}
+
+.stacked {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    img {
+        width: 100%;
+        margin: 20px 0;
     }
 }
 
@@ -385,6 +396,7 @@ BLOG FEATURE
 .blog-feature {
     text-align: center;
     margin-bottom: 60px;
+    padding-top: 30px;
     align-items: flex-start;
 
     .blog-feature-header {
@@ -402,7 +414,7 @@ BLOG FEATURE
         .blog-thumbnail {
             width: 250px;
             position: relative;
-            margin: 30px;
+            margin: 40px;
 
             .blog-thumb-image {
                 width: 100%;
@@ -412,7 +424,7 @@ BLOG FEATURE
                 img {
                     height: 100%;
                     width: 100%;
-                    object-fit: fill;
+                    object-fit: cover;
                 }
             }
 
@@ -477,35 +489,42 @@ BLOG
 */
 
 .blog-container {
-    max-width: 900px;
-    margin: 0 auto; 
-    text-align: center;
+    display: flex;
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 650px;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        display: inline-block;
+        width: 100%;
+    }
 }
 
 .blog-listing {
-    margin: 30px auto;
     background-color: rgba(91, 124, 134, 0.07);
-
-    .blog-listing-image,
-    .blog-listing-text {
-        display: inline-block;
-    }
+    width: 100%;
+    display: flex;
 
     .blog-listing-image {
-        height: 100%;
+        height: 250px;
         width: 250px;
-        float: left;
+        overflow: hidden;
 
         img {
             height: 100%;
             width: 100%;
-            object-fit: fill;
+            object-fit: cover;
         }
     }
 
     .blog-listing-text {
         text-align: center;
         padding: 30px 10px;
+        height: 250px;
+        flex: 1;
 
         .blog-listing-title {
             margin: 15px 0;
@@ -513,17 +532,18 @@ BLOG
     }
 }
 
-@media screen and (min-width: 650px) {
-    .blog-listing {
-        width: 80%;
-        max-width: 600px;
-        height: 250px;
+@media screen and (max-width: 550px) {
+    .blog-container {
+        max-width: 290px;
     }
-}
 
-@media screen and (max-width: 649px) {
     .blog-listing {
-        width: 250px;
+        flex-wrap: wrap;
+
+        .blog-listing-text {
+            width: 100%;
+            height: auto;
+        }
     }
 }
 
