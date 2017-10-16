@@ -1,7 +1,7 @@
 ---
 title: How To Fit It All In
 category: Fitness
-meta: 
+meta: Finding the time
 layout: post
 image: /assets/images/p6.png
 ---
