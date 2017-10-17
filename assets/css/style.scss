@@ -171,7 +171,7 @@ BRAND
         text-align: center;
 
         img {
-            height: 50px;
+            height: 160px;
         }
 
         p {
@@ -234,7 +234,9 @@ CAROUSEL
         overflow:hidden;
         position: relative;
         img {
-            height: 100%;
+            display: block;
+            width: 100%;
+            height: auto;
         }
     }
       

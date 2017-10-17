@@ -1,6 +1,6 @@
 ---
 title: How To Fit It All In
-category: Fitness
+category: Physically Well
 meta: Finding the time
 layout: post
 image: /assets/images/p6.png

@@ -1,6 +1,6 @@
 ---
 title: The Perfect Diet Guaranteed Weight Loss!
-category: Fitness
+category: Physically Well
 meta: Calories in, Calories out!
 layout: post
 image: /assets/images/Phills_Barbell.jpg
