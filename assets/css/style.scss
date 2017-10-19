@@ -602,4 +602,20 @@ POST
     a {
         border-bottom: 1px solid $accent;
     }
+
+    table {
+        margin: 0 auto;
+
+        tr {
+            margin-bottom: 3px;
+        }
+        tr:last-child {
+            margin-bottom: 0;
+        }
+
+        td {
+            padding: 0 5px;
+        }
+
+    }
 }
