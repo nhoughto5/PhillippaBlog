@@ -1,7 +1,7 @@
 ---
 title: How To Fit It All In
 category: Physically Well
-meta: Finding the time
+meta: Finding The Time!
 layout: post
 image: /assets/images/p6.png
 ---
