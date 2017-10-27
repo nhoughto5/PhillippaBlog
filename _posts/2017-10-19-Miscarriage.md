@@ -1,7 +1,7 @@
 ---
 title: I Thought I Knew...
 category: Medicine
-meta: 
+meta: When formal medical education doesn't prepare you for everything.
 layout: post
 image: /assets/images/phills_and_chris.jpg
 ---
